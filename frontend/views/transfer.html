@@ -1,0 +1,26 @@
+<div class="card" style="max-width: 600px; margin: 20px auto;">
+    <h3>Transfer Money Between Accounts</h3>
+    <form id="transferForm">
+        <div class="form-group">
+            <label for="fromAccount">From Account</label>
+            <select id="fromAccount" required>
+                <option value="">Loading accounts...</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="toAccount">To Account</label>
+            <select id="toAccount" required>
+                 <option value="">Loading accounts...</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="transferAmount">Amount</label>
+            <input type="number" id="transferAmount" placeholder="0.00" min="0.01" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="transferNote">Note (Optional)</label>
+            <input type="text" id="transferNote" placeholder="e.g., Monthly Rent">
+        </div>
+        <button type="submit" class="btn btn-primary">Transfer Money</button>
+    </form>
+</div>

@@ -1,0 +1,46 @@
+<div class="two-column">
+    <!-- This section will be hidden for non-admin users by app.js -->
+    <div class="card" id="createAccountCard">
+        <h3>Create New Account</h3>
+        <form id="createAccountForm">
+            <div class="form-group">
+                <label for="newAccountName">Account Holder Name</label>
+                <input type="text" id="newAccountName" placeholder="Enter full name" required>
+            </div>
+            <div class="form-group">
+                <label for="newAccountEmail">Email</label>
+                <input type="email" id="newAccountEmail" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="newAccountPhone">Phone</label>
+                <input type="tel" id="newAccountPhone" placeholder="Enter phone number">
+            </div>
+            <div class="form-group">
+                <label for="newAccountType">Account Type</label>
+                <select id="newAccountType">
+                    <option value="checking">Checking</option>
+                    <option value="savings">Savings</option>
+                    <option value="business">Business</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="initialDeposit">Initial Deposit</label>
+                <input type="number" id="initialDeposit" placeholder="0.00" min="0" step="0.01" value="0">
+            </div>
+            <button type="submit" class="btn btn-success">Create Account</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h3>Search Accounts</h3>
+        <div class="form-group">
+            <label for="searchAccountInput">Search by Account Number or Name</label>
+            <input type="text" id="searchAccountInput" placeholder="Start typing to search...">
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h3>All Accounts</h3>
+    <div id="accountsListContainer"><p>Loading...</p></div>
+</div>

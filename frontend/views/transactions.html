@@ -1,0 +1,52 @@
+<div class="two-column">
+    <!-- Deposit Card (This is correct) -->
+    <div class="card">
+        <h3>Deposit Money</h3>
+        <form id="depositForm">
+            <div class="form-group">
+                <label for="depositAccount">Account Number</label>
+                <input type="text" id="depositAccount" placeholder="Enter account number" required>
+            </div>
+            <div class="form-group">
+                <label for="depositAmount">Amount</label>
+                <input type="number" id="depositAmount" placeholder="0.00" min="0.01" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="depositNote">Note (Optional)</label>
+                <input type="text" id="depositNote" placeholder="e.g., Cash Deposit">
+            </div>
+            <button type="submit" class="btn btn-success">Deposit</button>
+        </form>
+    </div>
+
+    <!-- Single Withdrawal Card (This is correct) -->
+   <div class="card">
+    <h3>Withdraw Money</h3>
+    <form id="withdrawalForm">
+        <div class="form-group">
+            <label for="withdrawAccount">Account Number</label>
+            <input type="text" id="withdrawAccount" placeholder="Enter account number" required>
+        </div>
+        <div class="form-group">
+            <label for="withdrawAmount">Amount</label>
+            <input type="number" id="withdrawAmount" placeholder="0.00" min="0.01" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="withdrawNote">Note (Optional)</label>
+            <input type="text" id="withdrawNote" placeholder="e.g., ATM Withdrawal">
+        </div>
+        <button type="submit" class="btn btn-danger">Withdraw</button>
+    </form>
+    </div> <!-- This closes the two-column div -->
+</div>
+
+
+<!-- Transaction History Card (This is correct) -->
+<div class="card">
+    <h3>Transaction History</h3>
+    <div class="form-group">
+        <label for="transactionFilterAccount">Filter by Account Number</label>
+        <input type="text" id="transactionFilterAccount" placeholder="Enter account number to filter (optional)">
+    </div>
+    <div id="transactionHistoryContainer"><p>Loading...</p></div>
+</div>

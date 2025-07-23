@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Screen (Initially Visible) -->
+        <div id="loginScreen" class="login-container">
+            <div class="header">
+                <h1>🏦 SecureBank</h1>
+                <p>Professional Banking Management System</p>
+            </div>
+            <div class="card">
+                <div class="form-group">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" placeholder="Enter username" value="admin">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter password" value="admin123">
+                </div>
+                <button class="btn btn-primary" id="loginButton" style="width: 100%;">Login</button>
+                <div id="loginAlertContainer" style="margin-top: 15px;"></div>
+                <p style="margin-top: 15px; text-align: center; color: #7f8c8d; font-size: 14px;">
+                    Demo: admin/admin123 or customer/customer123
+                </p>
+            </div>
+        </div>
+
+        <!-- Main Application (Initially Hidden) -->
+        <div id="mainApp" class="hidden">
+            <div class="header">
+                <h1>🏦 SecureBank Management System</h1>
+                <p>Welcome, <span id="currentUser"></span> (<span id="currentUserRole"></span>) | 
+                   <button id="logoutButton" class="btn btn-danger" style="padding: 5px 10px; font-size: 14px; margin: 0;">Logout</button>
+                </p>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-view="dashboard">📊 Dashboard</button>
+                <button class="tab-btn" data-view="accounts">👥 Accounts</button>
+                <button class="tab-btn" data-view="transactions">💰 Transactions</button>
+                <button class="tab-btn" data-view="transfer">🔄 Transfer</button>
+                <button class="tab-btn" id="reportsTab" data-view="reports">📈 Reports</button>
+            </div>
+
+            <!-- This is where the content from other HTML files will be loaded -->
+            <main id="view-container"></main>
+        </div>
+
+        <!-- Global Alert Container -->
+        <div id="alertContainer" style="position: fixed; top: 20px; right: 20px; z-index: 1000; width: 350px;"></div>
+    </div>
+
+    <!-- Main Application Logic -->
+    <script src="app.js"></script>
+</body>
+</html>

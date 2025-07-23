@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💰 Bank Management System
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge\&logo=python)
@@ -172,3 +173,6 @@ This project is licensed under the MIT License. See [LICENSE.md](LICENSE.md) for
 ## 👨‍💻 Author
 
 Made with ❤️ by \[Deekshith]. Feel free to connect and contribute!
+=======
+# Banking-System
+>>>>>>> a53c3fba1b502aa6b472a8473b49b28cdef17621
